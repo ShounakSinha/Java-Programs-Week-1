@@ -1,1 +1,33 @@
+import java.util.*;
+
+public class palindrome {
+    public boolean palindrome(int m) {
+        int n = m;
+        int rev = 0;
+        while (n != 0) {
+            int digit = n % 10;
+            rev = rev * 10 + digit;
+            n /= 10;
+        }
+        if (rev == m) {
+            return true;
+        } else {
+            return false;
+        }
+
+    }
+
+    public static void main() {
+        int n = 0;
+        Scanner in = new Scanner(System.in);
+        System.out.println("Enter a number: ");
+        n = in.nextInt();
+        palindrome p = new palindrome();
+        if (p.palindrome(n)) {
+            System.out.println(n + " is a palindrome number.");
+        } else {
+            System.out.println(n + " is not a palindrome number.");
+        }
+    }
+}
 
