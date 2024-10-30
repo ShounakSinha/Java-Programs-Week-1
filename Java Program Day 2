@@ -34,3 +34,114 @@ public class palindrome {
 
 
 */
+
+/**
+import java.util.Scanner;
+
+public class calculator {
+    public static void main(String[] args) {
+        // Create a Scanner object for user input
+        Scanner in = new Scanner(System.in);
+
+        // Display a menu of operations
+        System.out.println("Scientific Calculator");
+        System.out.println("Select an operation:");
+        System.out.println("1. Addition");
+        System.out.println("2. Subtraction");
+        System.out.println("3. Multiplication");
+        System.out.println("4. Division");
+        System.out.println("5. Sine");
+        System.out.println("6. Cosine");
+        System.out.println("7. Tangent");
+        System.out.println("8. Logarithm");
+        System.out.println("9. Exponential");
+
+        // Read user's choice
+        int choice = in.nextInt();
+
+        // Variables to store numbers and result
+        double num1, num2, result = 0;
+
+        // Perform operation based on user's choice
+        switch (choice) {
+            case 1:
+                // Addition
+                System.out.print("Enter first number: ");
+                num1 = in.nextDouble();
+                System.out.print("Enter second number: ");
+                num2 = in.nextDouble();
+                result = add(num1, num2);
+                System.out.println("Result: " + result);
+                break;
+            case 2:
+                // Subtraction
+                System.out.print("Enter first number: ");
+                num1 = in.nextDouble();
+                System.out.print("Enter second number: ");
+                num2 = in.nextDouble();
+                result = subtract(num1, num2);
+                System.out.println("Result: " + result);
+                break;
+            case 3:
+                // Multiplication
+                System.out.print("Enter first number: ");
+                num1 = in.nextDouble();
+                System.out.print("Enter second number: ");
+                num2 = in.nextDouble();
+                result = multiply(num1, num2);
+                System.out.println("Result: " + result);
+                break;
+            case 4:
+                // Division
+                System.out.print("Enter numerator: ");
+                num1 = in.nextDouble();
+                System.out.print("Enter denominator: ");
+                num2 = in.nextDouble();
+                result = divide(num1, num2);
+                System.out.println("Result: " + result);
+                break;
+            case 5:
+                // Sine function
+                System.out.print("Enter angle in degrees: ");
+                num1 = in.nextDouble();
+                result = sine(num1);
+                System.out.println("Sine(" + num1 + ") = " + result);
+                break;
+            case 6:
+                // Cosine function
+                System.out.print("Enter angle in degrees: ");
+                num1 = in.nextDouble();
+                result = cosine(num1);
+                System.out.println("Cosine(" + num1 + ") = " + result);
+                break;
+            case 7:
+                // Tangent function
+                System.out.print("Enter angle in degrees: ");
+                num1 = in.nextDouble();
+                result = tangent(num1);
+                System.out.println("Tangent(" + num1 + ") = " + result);
+                break;
+            case 8:
+                // Logarithm
+                System.out.print("Enter number: ");
+                num1 = in.nextDouble();
+                result = logarithm(num1);
+                System.out.println("Logarithm(" + num1 + ") = " + result);
+                break;
+            case 9:
+                // Exponential function
+                System.out.print("Enter exponent: ");
+                num1 = in.nextDouble();
+                result = exponential(num1);
+                System.out.println("Exponential(" + num1 + ") = " + result);
+                break;
+            default:
+                System.out.println("Invalid choice");
+        }
+
+        // Close the in to prevent resource leak
+        in.close();
+    }
+
+
+*/
