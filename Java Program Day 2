@@ -143,5 +143,75 @@ public class calculator {
         in.close();
     }
 
+    // Method for addition
+    public static double add(double a, double b) {
+        // Adds two numbers and returns the result
+        return a + b;
+    }
+
+    // Method for subtraction
+    public static double subtract(double a, double b) {
+        // Subtracts second number from first and returns the result
+        return a - b;
+    }
+
+    // Method for multiplication
+    public static double multiply(double a, double b) {
+        // Multiplies two numbers and returns the result
+        return a * b;
+    }
+
+    // Method for division
+    public static double divide(double a, double b) {
+        // Divides first number by second and returns the result
+        if (b != 0) {
+            return a / b;
+        } else {
+            System.out.println("Error: Division by zero");
+            return 0;
+        }
+    }
+
+    // Method to calculate sine of an angle
+    public static double sine(double degrees) {
+        // Converts degrees to radians and returns sine value
+        double radians = Math.toRadians(degrees);
+        return Math.sin(radians);
+    }
+
+    // Method to calculate cosine of an angle
+    public static double cosine(double degrees) {
+        // Converts degrees to radians and returns cosine value
+        double radians = Math.toRadians(degrees);
+        return Math.cos(radians);
+    }
+
+    // Method to calculate tangent of an angle
+    public static double tangent(double degrees) {
+        // Converts degrees to radians and returns tangent value
+        double radians = Math.toRadians(degrees);
+        return Math.tan(radians);
+    }
+
+    // Method to calculate natural logarithm
+    public static double logarithm(double a) {
+        // Returns natural logarithm of a positive number
+        if (a > 0) {
+            return Math.log(a);
+        } else {
+            System.out.println("Error: Logarithm of non-positive number");
+            return 0;
+        }
+    }
+
+    // Method to calculate exponential value
+    public static double exponential(double a) {
+        // Returns exponential (e^a)
+        return Math.exp(a);
+    }
+    
+}
+
+
 
 */
