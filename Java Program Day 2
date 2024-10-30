@@ -1,3 +1,4 @@
+/**
 import java.util.*;
 
 public class palindrome {
@@ -31,3 +32,5 @@ public class palindrome {
     }
 }
 
+
+*/
