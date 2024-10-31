@@ -1,1 +1,30 @@
+import java.util.*;
+
+public class methodsinjava 
+{
+public static void main(String[] args) {
+    Scanner in = new Scanner(System.in);
+    Map<String, Integer> prices = new HashMap<>();
+    prices.put("Apple", 10);
+    prices.put("Banana", 5);
+    prices.put("Orange", 8);
+    prices.put("Grapes", 15);
+
+    Map<String, Integer> cart = new HashMap<>();
+
+    while (true) {
+        System.out.println("Menu:");
+        for (String fruit : prices.keySet()) {
+            System.out.println(fruit + " - $" + prices.get(fruit));
+        }
+        System.out.println("Options:");
+        System.out.println("1. Add fruit");
+        System.out.println("2. Remove fruit");
+        System.out.println("3. Increase quantity");
+        System.out.println("4. View cart");
+        System.out.println("5. Checkout");
+        System.out.print("Choose an option: ");
+
+        int option = in.nextInt();
+        in.nextLine(); // consume the newline
 
