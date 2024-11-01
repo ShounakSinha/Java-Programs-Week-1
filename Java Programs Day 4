@@ -21,4 +21,50 @@ public class methods_area {
     public static void main(String args[]) {
         methods_area obj = new methods_area();
         Scanner in = new Scanner(System.in);
+        boolean running = true;
+        while (running) {
+            System.out.println("Choose an option:");
+            System.out.println("1. Calculate area of rectangle");
+            System.out.println("2. Calculate area of square");
+            System.out.println("3. Calculate area of circle");
+            System.out.println("4. Calculate area of triangle");
+            System.out.println("5. Exit");
+            int choice = in.nextInt();
+            switch (choice) {
+                case 1:
+                    System.out.println("Enter length and breadth:");
+                    int length = in.nextInt();
+                    int breadth = in.nextInt();
+                    System.out.println("Area of rectangle is " + obj.area(length, breadth));
+                    break;
+                case 2:
+                    System.out.println("Enter side length:");
+                    int side = in.nextInt();
+                    System.out.println("Area of square is " + obj.area(side));
+                    break;
+                case 3:
+                    System.out.println("Enter radius:");
+                    double radius = in.nextDouble();
+                    System.out.println("Area of circle is " + obj.area(radius));
+                    break;
+                case 4:
+                    System.out.println("Enter three sides:");
+                    int side1 = in.nextInt();
+                    int side2 = in.nextInt();
+                    int side3 = in.nextInt();
+                    System.out.println("Area of triangle is " + obj.area(side1, side2, side3));
+                    break;
+                case 5:
+                    running = false;
+                    break;
+                default:
+                    System.out.println("Invalid choice, please try again.");
+            }
+        }
+        in.close();
+
+    }
+
+}
+
 
