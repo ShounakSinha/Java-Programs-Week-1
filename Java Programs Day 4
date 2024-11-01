@@ -71,6 +71,23 @@ public class methods_area {
 
 */
 
+        InputStreamReader in = new InputStreamReader(System.in);
+        BufferedReader br = new BufferedReader(in);
+        System.out.println("Enter the numbers to multiply: ");
+        String s = null;
+        try {
+            s = br.readLine();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        String[] str = s.split(" ");
+        int[] arr = new int[str.length];
+        for (int i = 0; i < str.length; i++) {
+            arr[i] = Integer.parseInt(str[i]);
+        }
+        varargs obj = new varargs();
+        System.out.println("Product of the numbers: " + obj.product(arr));
+
 
 
 
