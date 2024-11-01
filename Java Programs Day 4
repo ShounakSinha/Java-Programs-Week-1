@@ -72,6 +72,8 @@ public class methods_area {
 */
 
 //java program for varargs
+/**
+
 import java.io.*;
 
 public class varargs {
@@ -108,7 +110,11 @@ public class varargs {
         
     }
 
-}       
+}
+
+*/
+
+
 
 
 
