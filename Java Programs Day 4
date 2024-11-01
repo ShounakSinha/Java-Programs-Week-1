@@ -114,6 +114,30 @@ public class varargs {
 
 */
 
+public class recursion 
+{
+    public int addseries(int n)
+    {
+        if (n == 0) {
+            return 0;
+        } else {
+            return n + addseries(n - 1);
+        }
+    }
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        recursion r = new recursion();
+        System.out.println("Enter a number: ");
+        int n = in.nextInt();
+        System.out.println("Sum of series is: " + r.addseries(n));
+        recursion obj = new recursion();
+        System.out.println(obj.addseries(5));
+    }
+    
+}
+
+
 
 
 
