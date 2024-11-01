@@ -114,6 +114,7 @@ public class varargs {
 
 */
 
+import java.util.*;
 public class recursion 
 {
     public int addseries(int n)
@@ -133,6 +134,7 @@ public class recursion
         System.out.println("Sum of series is: " + r.addseries(n));
         recursion obj = new recursion();
         System.out.println(obj.addseries(5));
+        r.close();
     }
     
 }
