@@ -1,1 +1,24 @@
+import java.util.Scanner;
+
+public class methods_area {
+    public int area(int l, int b) {
+        return l * b;
+    }
+
+    public int area(int s) {
+        return s * s;
+    }
+
+    public double area(double r) {
+        return 3.14 * r * r;
+    }
+
+    public int area(int a, int b, int c) {
+        int s = (a + b + c) / 2;
+        return (int) Math.sqrt(s * (s - a) * (s - b) * (s - c));
+    }
+
+    public static void main(String args[]) {
+        methods_area obj = new methods_area();
+        Scanner in = new Scanner(System.in);
 
