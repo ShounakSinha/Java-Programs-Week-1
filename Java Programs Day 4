@@ -71,10 +71,11 @@ public class methods_area {
 
 */
 
+//java program for varargs
 import java.io.*;
 
 public class varargs {
-    public int product(int... sumo) {
+    public int product(int... sumo) {   //varargs implemented here
         int prod  = 1;
         for (int i : sumo) {
             prod *= i;
@@ -85,9 +86,25 @@ public class varargs {
     public static void main(String[] args) 
     {
 
+        //varargs obj = new varargs();
+        //System.out.println(obj.product(1, 2, 3, 4, 5));
+        //System.out.println(obj.product(1, 2, 3, 4, 5, 6, 7, 8, 9, 10));
+        InputStreamReader in = new InputStreamReader(System.in);
+        BufferedReader br = new BufferedReader(in);
+        System.out.println("Enter the numbers to multiply: ");
+        String s = null;
+        try {
+            s = br.readLine();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        String[] str = s.split(" ");
+        int[] arr = new int[str.length];
+        for (int i = 0; i < str.length; i++) {
+            arr[i] = Integer.parseInt(str[i]);
+        }
         varargs obj = new varargs();
-        System.out.println(obj.product(1, 2, 3, 4, 5));
-        System.out.println(obj.product(1, 2, 3, 4, 5, 6, 7, 8, 9, 10));
+        System.out.println("Product of the numbers: " + obj.product(arr));
         
     }
 
