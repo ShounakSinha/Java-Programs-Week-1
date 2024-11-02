@@ -1,1 +1,19 @@
+public abstract class Car {  // Abstract class – cannot be instantiated directly
+
+    private String model;
+    private String make;
+    private int year;
+    private double speed;
+
+    public Car(String model, String make, int year) {
+        this.model = model;
+        this.make = make;
+        this.year = year;
+        this.speed = 0;
+    }
+
+    public void start() {
+        System.out.println("Starting the car...");
+        // Complex engine start-up logic hidden here (abstracted)
+    }
 
