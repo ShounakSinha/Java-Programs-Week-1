@@ -85,6 +85,49 @@ public class SportsCar extends Car {
 }
 */
 
+class Employee {
+    int salary;
+    String name;
+
+    // Getter method for salary
+    public int getSalary() {
+        return salary;
+    }
+
+    // Setter method for salary
+    public void setSalary(int s) {
+        salary = s;
+    }
+
+    // Getter method for name
+    public String getName() {
+        return name;
+    }
+
+    // Setter method for name
+    public void setName(String n) {
+        name = n;
+    }
+}
+
+public class EmployeeCustom {
+    public static void main(String[] args) {
+        // Create an Employee object
+        Employee emp = new Employee();
+        
+        // Set the name of the employee
+        emp.setName("John");
+        
+        // Set the salary of the employee
+        emp.setSalary(1000);
+        
+        // Print the name of the employee
+        System.out.println("Name: " + emp.getName());
+        
+        // Print the salary of the employee
+        System.out.println("Salary: " + emp.getSalary());
+    }
+}
 
 
 
