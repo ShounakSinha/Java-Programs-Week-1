@@ -16,4 +16,29 @@ public abstract class Car {  // Abstract class – cannot be instantiated direct
         System.out.println("Starting the car...");
         // Complex engine start-up logic hidden here (abstracted)
     }
+    public void accelerate(double amount) {
+        speed += amount;
+        System.out.println("Accelerating. Speed: " + speed);
+        // Complex mechanics of acceleration hidden
+    }
+
+
+    public void brake(double amount) {
+        speed = Math.max(0, speed - amount); // Ensure speed doesn't go below 0
+        System.out.println("Braking. Speed: " + speed);
+        // Complex braking system logic hidden
+    }
+
+
+    public abstract void playMusic();  // Abstract method – must be implemented by subclasses
+
+
+    public String getCarInfo() { // Concrete method
+        return year + " " + make + " " + model;
+    }
+
+}
+
+
+
 
