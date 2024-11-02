@@ -39,6 +39,50 @@ public abstract class Car {  // Abstract class – cannot be instantiated direct
 
 }
 
+// Example of a concrete class implementing the abstract class
+public class SportsCar extends Car {
+
+    private boolean turboEnabled;
+
+
+    public SportsCar(String model, String make, int year) {
+        super(model, make, year);
+        this.turboEnabled = false;
+    }
+
+
+    @Override // Implementing the abstract method
+    public void playMusic() {
+        System.out.println("Playing rock music!");
+    }
+
+
+    public void enableTurbo() {
+        turboEnabled = true;
+        System.out.println("Turbo enabled!");
+    }
+
+    @Override
+    public void accelerate(double amount) { // Example of method overriding to specialize behavior
+        if (turboEnabled) {
+            amount *= 1.5;  // Turbo boost!
+        }
+        super.accelerate(amount); // Call the parent class's accelerate method
+    }
+
+
+    public static void main(String[] args) {
+        SportsCar myCar = new SportsCar("Roadster", "Generic Motors", 2024);
+        myCar.start();
+        myCar.accelerate(20);
+        myCar.enableTurbo();
+        myCar.accelerate(20);
+        myCar.playMusic();
+        myCar.brake(10);
+        System.out.println(myCar.getCarInfo()); //Accessing the concrete method
+    }
+}
+
 
 
 
