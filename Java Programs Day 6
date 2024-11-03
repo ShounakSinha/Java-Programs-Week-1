@@ -130,6 +130,22 @@ class Person {
     }
 }
 
+class Main {
+    public static void main(String[] args) {
+        Person person = new Person();
+
+        person.setName("Alice");
+        person.setAge(25);
+        person.setEmail("alice@example.com");
+
+        System.out.println("Name: " + person.getName());
+        System.out.println("Age: " + person.getAge());
+        System.out.println("Email: " + person.getEmail());
+
+        // Trying invalid email
+        person.setEmail("alice.example.com");  // Outputs: Invalid email format!
+    }
+}
 
 
 
