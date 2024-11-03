@@ -1,3 +1,26 @@
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.IOException;
+
+public class piglatin {
+    String str;
+
+    public void setStr(String s) {
+        str = s;
+    }
+
+    public boolean isPiglatin() {
+        if (str == null) {
+            return false;
+        }
+        if (str.length() == 0) {
+            return false;
+        }
+        if (str.charAt(0) == 'a' || str.charAt(0) == 'e' || str.charAt(0) == 'i' || str.charAt(0) == 'o'
+                || str.charAt(0) == 'u') {
+            return true;
+        }
+        return false;
+    }
+
+}
