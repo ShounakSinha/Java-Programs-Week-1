@@ -22,5 +22,28 @@ public class piglatin {
         }
         return false;
     }
+class piglatinCustom {
+    public static void main(String[] args) {
+        // Create a piglatin object
+        piglatin pig = new piglatin();
+
+        // Enter the string from the user using BufferedReader
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        System.out.print("Enter a string: ");
+        try {
+            String userInput = reader.readLine();
+            pig.setStr(userInput);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        // Check if the string is in piglatin
+        if (pig.isPiglatin()) {
+            System.out.println("The string is in piglatin");
+        } else {
+            System.out.println("The string is not in piglatin");
+        }
+    }
+}
 
 }
