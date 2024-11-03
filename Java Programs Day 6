@@ -73,4 +73,18 @@ class human
     }
 }
 
+public class gettersandsettersinJava {
+    public static void main(String[] args) {
+        human h = new human();
+        h.setAge(20);
+        h.setName("John");
+        h.phonenumber = 1234567890;
+        System.out.println("Age: " + h.getAge());
+        System.out.println("Name: " + h.getName());
+        System.out.println("Phone Number: " + h.phonenumber);
+    }
+    
+}
+
+
 
