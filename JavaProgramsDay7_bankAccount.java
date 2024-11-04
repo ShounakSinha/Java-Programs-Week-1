@@ -20,3 +20,11 @@ public class BankAccount {
 
 }
 
+class maineta {
+    public static void main(String[] args) {
+        BankAccount account = new BankAccount(1000.0, "John Doe");
+        System.out.println("Account Holder: " + account.getAccountHolder());
+        System.out.println("Balance: " + account.getBalance());
+
+}
+
