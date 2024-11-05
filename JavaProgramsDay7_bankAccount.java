@@ -2,6 +2,11 @@
 public class BankAccount {
     private double balance;
     private String accountHolder;
+    public BankAccount()//default case to fall back to
+    {
+        this.balance = 0;
+        this.accountHolder = "";
+    }
     public BankAccount(double balance, String accountHolder) {
         this.balance = balance;
         this.accountHolder = accountHolder;
