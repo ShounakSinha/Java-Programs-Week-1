@@ -11,6 +11,14 @@ public class BankAccount {
         this.balance = balance;
         this.accountHolder = accountHolder;
     }
+    //overloading the constructor
+     public BankAccount(double balance) {
+        this.balance = balance;
+    }
+     public BankAccount(String accountHolder) {
+        this.accountHolder = accountHolder;
+    }
+    
     public double getBalance() {
         return balance;
     }
